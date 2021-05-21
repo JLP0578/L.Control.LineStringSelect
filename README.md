@@ -4,6 +4,8 @@
 
 LineString selection tool: you can select a part or a stretch of a polyline on the map. Performance-oriented, uses [rbush](https://github.com/mourner/rbush/) for segment lookup
 
+the original deposit is here: [https://github.com/w8r/L.Control.LineStringSelect](https://github.com/w8r/L.Control.LineStringSelect.git)
+
 ## [Demo](https://w8r.github.io/L.Control.LineStringSelect)
 
 Look how this thing deals with a coastline polyline consisting of ~500 points

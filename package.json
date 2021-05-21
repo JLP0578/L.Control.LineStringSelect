@@ -1,6 +1,6 @@
 {
-  "name": "leaflet-linestring-select",
-  "version": "1.1.0",
+  "name": "leaflet-linestring-selector",
+  "version": "1.1.2",
   "description": "LineString selection tool",
   "main": "dist/L.Control.LineStringSelect.js",
   "types": "dist/L.Control.LineStringSelect.d.ts",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/w8r/L.Control.LineStringSelect.git"
+    "url": "https://github.com/JLP0578/L.Control.LineStringSelect.git"
   },
   "keywords": [
     "leaflet",
@@ -38,9 +38,9 @@
     "leaflet": "global:L"
   },
   "bugs": {
-    "url": "https://github.com/w8r/L.Control.LineStringSelect/issues"
+    "url": "https://github.com/JLP0578/L.Control.LineStringSelect/issues"
   },
-  "homepage": "https://github.com/w8r/L.Control.LineStringSelect",
+  "homepage": "https://github.com/JLP0578/L.Control.LineStringSelect.git",
   "devDependencies": {
     "browserify": "^13.1.0",
     "browserify-shim": "^3.8.12",
