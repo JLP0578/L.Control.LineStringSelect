@@ -16,7 +16,7 @@ var Endpoint = Marker.extend( /** @lends Endpoint.prototype */ {
      * Grow marker by this ratio on mouseover
      * @type {Number}
      */
-    radiusRatio: 1.2
+    radiusRatio: 1.4
   },
 
   /**
@@ -41,14 +41,14 @@ var Endpoint = Marker.extend( /** @lends Endpoint.prototype */ {
    * Grow radius
    */
   _onMouseOver: function () {
-    this.setRadius(this.options.radius * this.options.radiusRatio);
+    this.setRadius(this.options.radius / this.options.radiusRatio);
   },
 
   /**
    * Set radius back
    */
   _onMouseOut: function () {
-    this.setRadius(this.options.radius / this.options.radiusRatio);
+    this.setRadius(this.options.radius * this.options.radiusRatio);
   }
 
 });

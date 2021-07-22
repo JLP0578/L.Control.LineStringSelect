@@ -34,7 +34,7 @@ var Endpoint = Marker.extend( /** @lends Endpoint.prototype */ {
      * Grow marker by this ratio on mouseover
      * @type {Number}
      */
-    radiusRatio: 1.2
+    radiusRatio: 1.4
   },
 
   /**
@@ -59,14 +59,14 @@ var Endpoint = Marker.extend( /** @lends Endpoint.prototype */ {
    * Grow radius
    */
   _onMouseOver: function () {
-    this.setRadius(this.options.radius * this.options.radiusRatio);
+    this.setRadius(this.options.radius / this.options.radiusRatio);
   },
 
   /**
    * Set radius back
    */
   _onMouseOut: function () {
-    this.setRadius(this.options.radius / this.options.radiusRatio);
+    this.setRadius(this.options.radius * this.options.radiusRatio);
   }
 
 });
@@ -241,21 +241,21 @@ var Select = L.Control.extend( /**  @lends Select.prototype */ {
     endMarkerClass: 'select-marker select-end-marker',
     movingMarkerClass: 'select-marker select-moving-marker',
     name: 'leaflet-linestring-select',
-    lineWeight: 4,
+    lineWeight: 6,
     lineTolerance: L.Browser.mobile ? 10 : 5,
 
     // moving(sliding) marker
     movingMarkerStyle: {
       fillColor: '#fff',
       fillOpacity: 1,
-      weight: 2,
+      weight: 4,
       opacity: 0.5,
       color: '#000'
     },
 
     // endpoint
     endpointStyle: {
-      radius: 5,
+      radius: 7,
       color: '#111',
       fillColor: '#fff',
       fillOpacity: 1

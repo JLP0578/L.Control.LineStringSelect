@@ -29,21 +29,21 @@ var Select = L.Control.extend( /**  @lends Select.prototype */ {
     endMarkerClass: 'select-marker select-end-marker',
     movingMarkerClass: 'select-marker select-moving-marker',
     name: 'leaflet-linestring-select',
-    lineWeight: 4,
+    lineWeight: 6,
     lineTolerance: L.Browser.mobile ? 10 : 5,
 
     // moving(sliding) marker
     movingMarkerStyle: {
       fillColor: '#fff',
       fillOpacity: 1,
-      weight: 2,
+      weight: 4,
       opacity: 0.5,
       color: '#000'
     },
 
     // endpoint
     endpointStyle: {
-      radius: 5,
+      radius: 7,
       color: '#111',
       fillColor: '#fff',
       fillOpacity: 1
